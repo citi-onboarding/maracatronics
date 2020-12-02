@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.footer {
+    position: relative;
+    width: 100vw;
+    height: 53px;
+    background-color: #010101;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    position: absolute;
+    left: 80px;
+}
+
+.footer p {
+    color: #ffffff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    position: absolute;
+}
+
+.parte1 {
+    left: 1055px;
+}
+
+.parte2 {
+    left: 1128.02px;
+}
+
+.parte3 {
+    left: 1167.71px;
+}
+
+.footer img {
+    position: absolute;
+    margin-left: 5px;
+}

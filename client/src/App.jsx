@@ -1,13 +1,15 @@
 import {
   Banner,
-  PostList,
+  Footer,
+///  PostList,
 } from './components';
 
 function App() {
   return (
     <>
     <Banner />
-    <PostList />
+    <Footer />
+
     </>
   );
 }
