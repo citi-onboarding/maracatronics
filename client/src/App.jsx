@@ -1,10 +1,11 @@
 import {
-  PostList,
+  QuemSomos,
 } from './components';
+import './cssGlobal.css';
 
 function App() {
   return (
-    <PostList />
+    <QuemSomos />
   );
 }
 

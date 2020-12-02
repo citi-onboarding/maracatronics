@@ -1,0 +1,32 @@
+.purpose-box {
+    display: flex;
+}
+.purpose-box h2 {
+    font-weight: 300;
+}
+.purpose-box img {
+    width: 58px;
+    margin-bottom: 18px;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-right: 25px;
+}
+
+.vertical-divisor {
+    width: 1px;
+
+    background-color: #ffffff;
+}
+
+.right-part {
+    display: flex;
+    align-items: center;
+
+    margin-left: 12px;
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.quemSomos {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("./assets/backgroundQuemSomos.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+
+    color: #FFFFFF;
+    font-family: 'Roboto';
+}
+.quemSomos p {
+    font-size: 1.25vw;
+}
+
+.yellow-line {
+    width: 10px;
+    height: 100%;
+
+    margin-left: 18px;
+
+    background-color: #FFED00;
+}
+
+.quemSomos-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quemSomos-content {
+    width: 87vw;
+    height: 83vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.line-one {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 46px;
+}
+.title {
+    width: 50%;
+}
+.title h1 {
+    margin-bottom: 24px;
+
+    font-size: 2.5rem;
+}
+.pic {
+    width: 40%;
+    height: 100%;
+
+    margin-left: 8rem;
+
+    border: 5px solid #FFED00;
+    box-sizing: border-box;
+    border-radius: 250px 250px 100px 100px;
+}
+
+.line-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 40px;
+    grid-column-gap: 120px;
+}
