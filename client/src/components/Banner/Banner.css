@@ -1,6 +1,12 @@
 .banner {
     width: 100vw;
-    height: 72vh;
+    height: 117vh;
     background: url("./assets/banner.svg");
     background-size: cover;
+}
+
+@media(max-width: 768px) {
+    .banner {
+        background-position: -40px;
+    }
 }
