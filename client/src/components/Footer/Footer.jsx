@@ -5,12 +5,16 @@ import codeIcon from './assets/codeIcon.svg'
 function Footer() {
     return (
         <footer className="footer">
-            <a href="https://citi.org.br/" target="_blank" rel="noreferrer">© 2020 CITi - Todos os direitos reservados</a>
-            <p className="parte1">Made with <img src={ codeIcon }/></p>
-            <p className="parte2">and <img src={ heartIcon }/></p>
-            <p className="parte3">by CITi</p>
+            <a href="https://citi.org.br/" target="_blank" rel="noreferrer" className="direitos">© 2020 CITi - Todos os direitos reservados</a>
+            <div className="textoFooter">
+                <p>Made with</p>
+                <img src={codeIcon}/>
+                <p>and</p>
+                <img src={heartIcon}/> 
+                <p>by CITi</p>
+            </div>
         </footer>
     );
   }
   
-  export default Footer;
+export default Footer;
