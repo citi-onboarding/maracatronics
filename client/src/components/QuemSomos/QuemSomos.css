@@ -4,7 +4,7 @@
     width: 100vw;
     height: 100vh;
 
-    background-image: url("./assets/backgroundQuemSomos.svg");
+    background-image: url("../assets/backgroundQuemSomos.svg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -14,7 +14,7 @@
     font-family: 'Roboto';
 }
 .quemSomos p {
-    font-size: 1.25vw;
+    font-size: 1.2vw;
 }
 
 .yellow-line {
@@ -36,7 +36,6 @@
 }
 .quemSomos-content {
     width: 87vw;
-    height: 83vh;
 
     display: flex;
     flex-direction: column;
@@ -53,15 +52,18 @@
     width: 50%;
 }
 .title h1 {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 
-    font-size: 2.5rem;
+    font-size: 3vw;
 }
 .pic {
-    width: 40%;
-    height: 100%;
+    width: 30vw;
+    height: 20vw;
 
-    margin-left: 8rem;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     border: 5px solid #FFED00;
     box-sizing: border-box;
@@ -74,4 +76,8 @@
     grid-template-rows: 1fr 1fr;
     grid-row-gap: 40px;
     grid-column-gap: 120px;
+}
+
+.logoMaraca {
+    display: none;
 }

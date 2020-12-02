@@ -17,12 +17,19 @@ function PostList() {
 
   return (
     <div className="post-list">
-      {posts?.map(({ _id, name, image }) => (
+      {
+      posts?.map( ( { _id, name, image } ) => (
+
         <div key={_id} className="post-card">
           <img src={image[0]?.url} alt="Post de Exemplo"/>
           <p>{name}</p>
         </div>
-      ))}
+        
+      )
+      
+      )
+      
+      }
     </div>
   );
 }
