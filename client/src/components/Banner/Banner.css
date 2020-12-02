@@ -1,0 +1,6 @@
+.banner {
+    width: 100vw;
+    height: 72vh;
+    background: url("./assets/banner.svg");
+    background-size: cover;
+}
