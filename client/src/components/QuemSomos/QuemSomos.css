@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+body {
+    overflow-x: hidden;
+}
 .quemSomos {
     width: 100vw;
-    height: 100vh;
 
     background-image: url("../assets/backgroundQuemSomos.svg");
     background-repeat: no-repeat;
@@ -19,7 +21,6 @@
 
 .yellow-line {
     width: 10px;
-    height: 100%;
 
     margin-left: 18px;
 
@@ -40,6 +41,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    padding: 60px 0px;
 }
 
 .line-one {
