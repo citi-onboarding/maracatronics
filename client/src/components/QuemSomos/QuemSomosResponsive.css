@@ -1,0 +1,101 @@
+@media (max-width: 1024px) {
+    .quemSomos-content {
+        height: auto;
+    }
+    .quemSomos p {
+        font-size: 2.2vw;
+    }
+    .pic {
+        width: 42vw;
+        height: 30vw;
+
+        margin-left: 58px;
+    }
+
+    .line-one h1 {
+        font-size: 2.5rem;
+
+        margin-bottom: 24px;
+    }
+
+    .line-two {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-row-gap: 35px;
+    }
+    .line-two img {
+        width: 72px;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+
+    .yellow-line, .pic, .vertical-divisor {
+        display: none
+    }
+
+    .quemSomos-content {
+        width: 95%;
+
+        justify-content: center;
+        align-items: center;
+
+        border: 3px solid #FFED00;
+        padding: 4vw;
+        box-sizing: border-box;
+
+        margin: 12px 0px;
+    }
+    .quemSomos p {
+        font-size: 100%;
+    }
+
+    .line-one {
+        justify-content: center;
+
+        margin-bottom: 22px;
+    }
+    .title {
+        width: 100%;
+
+        text-align: center;
+    }
+    .title h1 {
+        font-size: 8vw;
+        margin-bottom: 2px;
+    }
+
+    .line-two {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 18px;
+    }
+    .purpose-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .purpose-box img {
+        width: 54px;
+        margin-bottom: 4px;
+    }
+
+    .left-part {
+        padding: 0px;
+        margin-bottom: 4px;
+    }
+    .right-part {
+        margin: 0px;
+    }
+
+
+    .logoMaraca {
+        width: 55px;
+        display: block;
+
+        margin-top: 16px
+    }
+}
+
