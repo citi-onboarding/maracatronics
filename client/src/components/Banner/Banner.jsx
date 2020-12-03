@@ -5,24 +5,26 @@ import './Banner.css';
 
 function Banner() {
   const [banner, setBanner] = useState([]);
-
+  
   const loadBanner = async () => {
     const res = await axios.get('http://localhost:3001/api/banner');
     setBanner(res.data);
   };
-
+  
+  const imageBanner = banner[0]?.image.secure_url
+  
   useEffect(() => {
     loadBanner();
   }, []);
 
   return (
-    <div className="banner">
-      {banner?.map(({_id, image, key}) => (
-      <img key={_id} src={image?.secure_url}/>
-      ))}
-    </div>
+    <>
+    {imageBanner && (
+      <div id="imagemBanner" style={{backgroundImage: `url(${imageBanner})`}} ></div>
+    )}
+    </>
   );
 
-}
+};
 
 export default Banner;

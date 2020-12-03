@@ -1,6 +1,6 @@
 import './Footer.css';
-import heartIcon from './assets/heartIcon.svg'
-import codeIcon from './assets/codeIcon.svg'
+import codeIcon from "../assets/codeIcon.svg";
+import heartIcon from "../assets/heartIcon.svg";
 
 function Footer() {
     return (
