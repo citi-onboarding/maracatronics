@@ -3,7 +3,7 @@
         height: auto;
     }
     .quemSomos p {
-        font-size: 2.3vw;
+        font-size: 2.2vw;
     }
     .pic {
         width: 42vw;
@@ -13,26 +13,24 @@
     }
 
     .line-one h1 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
 
-        margin-bottom: 58px;
+        margin-bottom: 24px;
     }
 
     .line-two {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
         grid-row-gap: 35px;
     }
     .line-two img {
         width: 72px;
     }
 
-    .right-part {
-        margin-left: 25px;
-    }
+
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
 
     .yellow-line, .pic, .vertical-divisor {
         display: none
@@ -51,7 +49,7 @@
         margin: 12px 0px;
     }
     .quemSomos p {
-        font-size: 75%;
+        font-size: 100%;
     }
 
     .line-one {

@@ -81,6 +81,10 @@ body {
     grid-column-gap: 120px;
 }
 
+.right-part {
+    margin-left: 25px;
+}
+
 .logoMaraca {
     display: none;
 }
