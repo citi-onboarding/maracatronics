@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body {
-    overflow-x: hidden;
-}
 .quemSomos {
-    width: 100vw;
-
     background-image: url("../assets/backgroundQuemSomos.svg");
     background-repeat: no-repeat;
     background-size: cover;
