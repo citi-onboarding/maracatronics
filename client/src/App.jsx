@@ -4,6 +4,7 @@ import {
   Footer,
 ///  PostList,
   QuemSomos,
+  Robos,
 
 } from './components';
 import './cssGlobal.css';
@@ -14,6 +15,7 @@ function App() {
     <>
     <Banner />
     <QuemSomos />
+    <Robos />
     <Footer />
     </>
 
