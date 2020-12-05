@@ -49,13 +49,13 @@
         margin: 12px 0px;
     }
     .quemSomos p {
-        font-size: 100%;
+        font-size: 14px;
     }
 
     .line-one {
         justify-content: center;
 
-        margin-bottom: 22px;
+        margin-bottom: 0px;
     }
     .title {
         width: 100%;
@@ -64,18 +64,20 @@
     }
     .title h1 {
         font-size: 8vw;
-        margin-bottom: 2px;
+        margin-bottom: 8px;
     }
 
     .line-two {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
-        grid-row-gap: 18px;
+        grid-row-gap: 0px;
     }
     .purpose-box {
         flex-direction: column;
         align-items: center;
         text-align: center;
+
+        margin-top: 52px;
     }
     .purpose-box img {
         width: 54px;
@@ -84,12 +86,14 @@
 
     .left-part {
         padding: 0px;
+        margin-bottom: 8px; 
+    }
+    .left-part img {
         margin-bottom: 4px;
     }
     .right-part {
         margin: 0px;
     }
-
 
     .logoMaraca {
         width: 55px;
