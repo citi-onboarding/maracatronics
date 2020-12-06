@@ -7,12 +7,22 @@ import './ContatoResponsivo.css';
 import SocialMediaBox from './SocialMediaBox/SocialMediaBox.jsx';
 import Slide from './Slider/Slider'
 
-import email from '../assets/email.svg'
-import instagram from '../assets/instagram.svg'
-import local from '../assets/local.svg'
-import youtube from '../assets/youtube.svg'
+import emailIcon from '../assets/email.svg'
+import instagramIcon from '../assets/instagram.svg'
+import localIcon from '../assets/local.svg'
+import youtubeIcon from '../assets/youtube.svg'
 
 function Contato() {
+
+    const [redesSociais, setRedesSociais] = useState([]);
+
+    const loadRedesSociais = async () => {
+        const res = await axios.get('http://localhost:3001/api/redesSociais');
+        setRedesSociais(res.data)
+    }
+    useEffect( () => {
+        loadRedesSociais()
+    }, [])
 
     return (
 
@@ -29,7 +39,7 @@ function Contato() {
                             Contato
                         </h1>
 
-                        <form action="">
+                        <form >
 
                             <label htmlFor="name">Nome</label>
 
@@ -71,29 +81,44 @@ function Contato() {
 
                     <div className="social-media">
 
-                        <SocialMediaBox
-                        icon={instagram}
-                        title="Instagram"
-                        info={""}
-                        />
+                        {
+                            redesSociais?.map( ( {localizacao, email, youtube, instagram} ) => (
 
-                        <SocialMediaBox
-                        icon={youtube}
-                        title="Youtube"
-                        info={""}
-                        />
+                                <>
 
-                        <SocialMediaBox
-                        icon={email}
-                        title="E-mail"
-                        info={""}
-                        />
+                                    <SocialMediaBox
+                                    icon={instagramIcon}
+                                    title="Instagram"
+                                    info={"@maracatronics"}
+                                    link={instagram}
+                                    />
 
-                        <SocialMediaBox
-                        icon={local}
-                        title=""
-                        info={""}
-                        />
+                                    <SocialMediaBox
+                                    icon={youtubeIcon}
+                                    title="Youtube"
+                                    info={"Maracatronics UFPE"}
+                                    link={youtube}
+                                    />
+
+                                    <SocialMediaBox
+                                    icon={emailIcon}
+                                    title="E-mail"
+                                    info={email}
+                                    link={`mailto:${email}`}
+                                    />
+
+                                    <SocialMediaBox
+                                    icon={localIcon}
+                                    title=""
+                                    info={localizacao}
+                                    />
+
+                                </>
+
+                            ))
+                        }
+
+                        
 
                     </div>
                 

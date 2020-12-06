@@ -2,6 +2,9 @@
 
 .info-box {
     display: flex;
+
+    text-decoration: none;
+    color: white;
 }
 .info-box div {
     display: flex;

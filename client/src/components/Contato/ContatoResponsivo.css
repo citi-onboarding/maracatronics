@@ -1,50 +1,52 @@
 @media (max-width: 767px) {
 
     .contato {
-        display: flex;
         flex-direction: column;
     }
-    .yellow-line-contato {
-        width: 100%;
-        height: 3px;
-
-        margin: 10px 0px 20px 0px;
+    .contato-container {
+        justify-content: center;
     }
     .contato-content {
-        grid-template-columns: 100vw;
+        width: 100%;
+        grid-template-columns: 100%;
         grid-template-rows: auto auto auto;
         grid-template-areas:
         "collaborators"
         "form"
         "social-medias";
+        grid-column-gap: 0px;
 
         padding: 0px;
     }
+
+    .yellow-line-contato {
+        width: 100%;
+        height: 6px;
+
+        margin: 10px 0px 20px 0px;
+    }
+
     .collaborators {
         width: 100%;
+        margin-bottom: 50px;
     }
     .collaborators h1 {
-        font-size: 9vw;
+        margin-bottom: 20px;
+        font-size: 8vw;
         text-align: center;
     }
-    .slide {
-        border-radius: 0px;
-        width: 100vw !important;
-    }
-    .slick-list {
-        border-radius: 0px !important;
-    }
-
 
     .form-contato {
-        margin: 50px 0px 24px 0px;
-        padding: 0px 16px;
+        margin-bottom: 24px;
     }
     .form-contato h1 {
-        font-size: 36px;
         text-align: center;
+        font-size: 8vw;
 
-        margin-bottom: 8px;
+        margin-bottom: 16px;
+    }
+    .form-contato form {
+        padding: 0px 16px;
     }
     .form-contato input {
         height: 24px;
@@ -57,20 +59,17 @@
     }
 
     .social-media {
-        width: 100%;
-        padding: 26px 0px;
-
         background: #010101;
+        padding: 27px 18px 12px 18px;
+        
+        grid-row-gap: 16px;
     }
-    .info-box {
-        padding-left: 20px;
-
-        font-size: 12px;
+    .social-media .info-box img {
+        width: 24px;
+        height: 24px;
     }
-    .info-box img {
-        width: 16px;
-        height: 16px;
+    .social-media .info-box span {
+        font-size: 10px;
     }
-
 
 }
