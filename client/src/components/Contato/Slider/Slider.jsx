@@ -33,8 +33,6 @@ function Slide() {
         adaptiveHeight: true
     };
 
-    console.log(collaborators)
-
     return (
             <Slider className="slide" {...settings}>
 

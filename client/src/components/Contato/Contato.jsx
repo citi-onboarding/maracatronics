@@ -24,6 +24,42 @@ function Contato() {
         loadRedesSociais()
     }, [])
 
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+    
+    const sendMaile = async () => {
+
+        try {
+            const db = await axios.post('http://localhost:3001/api/contato', {
+                "name": name,
+                "email": email,
+                "subject": subject,
+                "message": message
+            })
+
+            if (db.status === 200) {
+                console.log('Mensagem enviada!');
+
+                var inputs = document.querySelectorAll(".input-clear")
+                inputs.forEach(
+                    (input) => {
+                        input.value = ''
+                    }
+                )
+            }
+        } catch (error) {
+            console.log('Erro ao enviar')
+            console.log(error)
+        }
+    }
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        sendMaile();
+    };
+
     return (
 
         <section className="contato">
@@ -39,33 +75,53 @@ function Contato() {
                             Contato
                         </h1>
 
-                        <form >
+                        <form onSubmit={(event) => handleSubmit(event)}>
 
                             <label htmlFor="name">Nome</label>
 
                             <input
+                            className="input-clear"
                             type="text"
                             name="name"
+                            value={name}
+                            onChange={(e) => {
+                                setName(e.target.value)
+                            }}
                             />
 
                             <label htmlFor="email">E-mail</label>
                             
                             <input
+                            className="input-clear"
                             type="email"
                             name="email"
+                            value={email}
+                            onChange={(e) => {
+                                setEmail(e.target.value)
+                            }}
                             />
 
                             <label htmlFor="subject">Assunto</label>
 
                             <input
+                            className="input-clear"
                             type="text"
                             name="subject"
+                            value={subject}
+                            onChange={(e) => {
+                                setSubject(e.target.value)
+                            }}
                             />
 
                             <label htmlFor="message">Mensagem</label>
 
                             <textarea
+                            className="input-clear"
                             name="message"
+                            value={message}
+                            onChange={(e) => {
+                                setMessage(e.target.value)
+                            }}
                             ></textarea>
 
                             <input type="submit" className="button-submit"/>
