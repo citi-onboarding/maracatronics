@@ -91,6 +91,7 @@ function Contato() {
                                     title="Instagram"
                                     info={"@maracatronics"}
                                     link={instagram}
+                                    target="_blank"
                                     />
 
                                     <SocialMediaBox
@@ -98,6 +99,7 @@ function Contato() {
                                     title="Youtube"
                                     info={"Maracatronics UFPE"}
                                     link={youtube}
+                                    target="_blank"
                                     />
 
                                     <SocialMediaBox
@@ -105,6 +107,7 @@ function Contato() {
                                     title="E-mail"
                                     info={email}
                                     link={`mailto:${email}`}
+                                    target="_self"
                                     />
 
                                     <SocialMediaBox

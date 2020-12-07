@@ -3,7 +3,7 @@ import './SocialMediaBox.css'
 function SocialMediaBox(props) {
     
     return (
-        <a href={props.link} className="info-box" target="blank">
+        <a href={props.link} className="info-box" target={props.target}>
             <img src={props.icon} alt={props.title}/>
 
             <div>

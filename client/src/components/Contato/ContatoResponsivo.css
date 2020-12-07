@@ -35,6 +35,24 @@
         font-size: 8vw;
         text-align: center;
     }
+    .collaborators .slide {
+        width: 100vw;
+    }
+    .collaborators .slick-slide {
+        margin: 0px 27px;
+        width: 240px !important;
+        height: 176px !important;
+    
+        background: white;
+        border-radius: 8px;
+    }
+    .collaborators .each-collaborators {
+        width: 240px;
+        height: 176px;
+    }
+    .collaborators .each-collaborators img {
+        width: 100px;
+    }
 
     .form-contato {
         margin-bottom: 24px;

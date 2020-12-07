@@ -8,33 +8,48 @@ import './Slider.css';
 
 function Slide() {
 
+    const [collaborators, setCollaborators] = useState([]);
+
+    const loadDados = async () => {
+        const res = await axios.get('http://localhost:3001/api/parceiros')
+        setCollaborators(res.data)
+    }
+    useEffect( () => {
+        loadDados()
+    }, [])
+
+
     const settings = {
         arrows: false,
         dots: false,
         infinite: true,
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 100,
         cssEase: "linear",
-        responsive: [
-            {
-              breakpoint: 1100,
-              settings: {
-                arrows: false,
-              }
-            }
-        ]
+        pauseOnHover: true,
+        adaptiveHeight: true
     };
 
+    console.log(collaborators)
+
     return (
-        <div className="slider-collaborators">
             <Slider className="slide" {...settings}>
+
+                {collaborators.map(( {nome, descricao, link, image} ) => (
                 
-            </Slider>
-        </div>
-        
+                    <div className="each-collaborators">
+
+                        <img src={image.secure_url} alt={nome}/>
+
+                    </div>
+                    
+                ))
+                }
+
+            </Slider>      
     );
 
 };
