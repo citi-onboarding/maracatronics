@@ -28,7 +28,7 @@
 }
 
 .buttonsSection {
-
+    background-color: black;
     display: flex;
     justify-content: space-between;
     margin-top: 47px;
@@ -54,3 +54,26 @@
 .buttonsSection button:hover {
     background-color: #FFED00;
 }
+
+.carousel {
+
+    width: 84%;
+    margin-top: 15px;
+    height: 69%;
+}
+
+.card {
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+}
+
