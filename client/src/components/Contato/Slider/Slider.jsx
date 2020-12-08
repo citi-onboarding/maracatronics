@@ -23,14 +23,15 @@ function Slide() {
         arrows: false,
         dots: false,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
+        speed: 3000,
         autoplaySpeed: 100,
         cssEase: "linear",
         pauseOnHover: true,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        rlt: true
     };
 
     return (
@@ -38,11 +39,19 @@ function Slide() {
 
                 {collaborators.map(( {nome, descricao, link, image} ) => (
                 
-                    <div className="each-collaborators">
+                    <a href={link} target="blank" className="each-collaborators">
 
                         <img src={image.secure_url} alt={nome}/>
 
-                    </div>
+                        <div className="information">
+
+                            <h3>{nome}</h3>
+
+                            <p>{descricao}</p>
+
+                        </div>
+
+                    </a>
                     
                 ))
                 }

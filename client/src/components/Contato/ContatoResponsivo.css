@@ -46,12 +46,37 @@
         background: white;
         border-radius: 8px;
     }
+    .collaborators .slick-list {
+        border-radius: 0px;
+
+        overflow: hidden;
+    }
     .collaborators .each-collaborators {
         width: 240px;
         height: 176px;
     }
     .collaborators .each-collaborators img {
         width: 100px;
+
+        margin-bottom: 8px;
+    }
+    .collaborators .information {
+        width: 240px;
+        height: auto;
+        opacity: 1;
+        padding: 0px;
+
+        position: initial;
+        z-index: initial;
+
+        background: none;
+    }
+    .collaborators .information h3 {
+        display: none;
+    }
+    .collaborators .information p {
+        width: 100%;
+        text-align: center;
     }
 
     .form-contato {

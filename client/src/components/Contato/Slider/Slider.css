@@ -5,6 +5,7 @@
     border-radius: 8px 0px 0px 8px;
 
     background: transparent;
+    outline: none;
 }
 .slick-slide {
     margin: 0px 27px;
@@ -24,7 +25,44 @@
     height: 240px;
 
     color: black;
+    text-decoration: none;
 }
 .each-collaborators img {
     width: 200px;
+}
+
+.information {
+    width: 320px;
+    height: 240px;
+
+    position: absolute;
+    z-index: 9999;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 8px;
+
+    padding-bottom: 16px;
+    padding-left: 8px;
+
+    background-image: url("../../assets/backgroundHover.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 320px;
+
+    opacity: 0;
+    transition: .4s;
+}
+.information h3 {
+    font-size: 16px;
+
+    margin-bottom: 12px;
+}
+.information p {
+    font-size: 10px;
+    width: 60%;
+}
+.information:hover {
+    opacity: 1;
 }
