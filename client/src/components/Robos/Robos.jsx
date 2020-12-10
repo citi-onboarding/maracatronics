@@ -13,23 +13,36 @@ function Robos() {
     const loadRobos = async () => {
         const res = await axios.get('http://localhost:3001/api/robos');
         robosType = res.data
-        setRobos(res.data.dataRoboAutonomoColetivo)
+        setRobos(res.data.dataRoboCombate)
     }
 
     function buttonsInitial(){
-        var botaoAutonomosColetivos = document.querySelector('#botaoAutonomosColetivos')
-        botaoAutonomosColetivos.style.backgroundColor = 'yellow'
+        var botaoCombate = document.querySelector('#botaoCombate')
+        botaoCombate.style.backgroundColor = 'yellow'
     }
 
     function buttonsClick(){
+        var arrowPrev = document.querySelector('.prev')
+        var arrowNext = document.querySelector('.next')
         var botaoCombate = document.querySelector('#botaoCombate')
         var botaoAutonomosIndividuais = document.querySelector('#botaoAutonomosIndividuais')
         var botaoAutonomosColetivos = document.querySelector('#botaoAutonomosColetivos')
+
+        function handleArrows(objeto){
+            if(Object.keys(objeto).length == 1) {
+                arrowPrev.style.display = 'none'
+                arrowNext.style.display = 'none'
+            } else{
+                arrowPrev.style.display = 'inline'
+                arrowNext.style.display = 'inline'
+            }
+        }
 
         const handleBotaoCombateClick = async () => {
             botaoCombate.style.backgroundColor = 'yellow'
             botaoAutonomosIndividuais.style.backgroundColor = 'white'
             botaoAutonomosColetivos.style.backgroundColor = 'white'
+            handleArrows(robosType.dataRoboCombate)
             setRobos(robosType.dataRoboCombate)
         }
         botaoCombate.addEventListener('click', handleBotaoCombateClick);
@@ -39,6 +52,7 @@ function Robos() {
             botaoCombate.style.backgroundColor = 'white'
             botaoAutonomosIndividuais.style.backgroundColor = 'white'
             botaoAutonomosColetivos.style.backgroundColor = 'yellow'
+            handleArrows(robosType.dataRoboAutonomoColetivo)
             setRobos(robosType.dataRoboAutonomoColetivo)
         }
         botaoAutonomosColetivos.addEventListener('click', handleBotaoAutonomosColetivosClick);
@@ -47,6 +61,7 @@ function Robos() {
             botaoCombate.style.backgroundColor = 'white'
             botaoAutonomosIndividuais.style.backgroundColor = 'yellow'
             botaoAutonomosColetivos.style.backgroundColor = 'white'
+            handleArrows(robosType.dataRoboAutonomoIndividual)
             setRobos(robosType.dataRoboAutonomoIndividual)
         }
         botaoAutonomosIndividuais.addEventListener('click', handleBotaoAutonomosIndividuaisClick);
@@ -82,12 +97,12 @@ function Robos() {
           <div className="content">
               <h1>Nossos robôs</h1>
               <div className="buttonsSection">
-                  <button id="botaoAutonomosColetivos">Autônomos Coletivos</button>
-                  <button id="botaoAutonomosIndividuais">Autônomos Individuais</button>
                   <button id="botaoCombate" >Combate</button>
+                  <button id="botaoAutonomosIndividuais">Autônomos Individuais</button>
+                  <button id="botaoAutonomosColetivos">Autônomos Coletivos</button>
               </div>
               <button className="prev" onClick={() => {
-            document.querySelector(".slick-prev.slick-arrow").click();
+            document.querySelector(".slick-prev.slick-arrow")?.click();
           }}></button>
               <div className="carousel">
                   <Slider {...settings}>
@@ -105,7 +120,7 @@ function Robos() {
                   </Slider>
               </div>
               <button className="next" onClick={() => {
-            document.querySelector(".slick-next.slick-arrow").click();
+            document.querySelector(".slick-next.slick-arrow")?.click();
           }}></button>
           </div>
       </section>
