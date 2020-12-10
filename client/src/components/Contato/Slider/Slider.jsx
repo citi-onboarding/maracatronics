@@ -22,26 +22,27 @@ function Slide() {
     const settings = {
         arrows: false,
         dots: false,
-        infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
         speed: 3000,
+        infinite: true,
         autoplaySpeed: 0,
         adaptiveHeight: true,
-        initialSlide: 1,
-        cssEase: 'linear',
-        loop: true,
+        variableWidth: true,
         responsive: [
             {
                 breakpoint: 767,
                 settings: {
                     pauseOnHover: false,
-                    
+                    slidesToShow: 1,
+                    slidesToScroll: 1
                 }
             }
         ]
     };
+
+    
 
     return (
             <Slider className="slide" {...settings}>

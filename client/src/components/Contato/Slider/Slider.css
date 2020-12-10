@@ -6,7 +6,7 @@
     width: 51.5vw;
 }
 .each-collaborators {
-    width: 320px;
+    width: calc(25.75vw - 18px);
     height: 240px;
 
     background: white;
@@ -25,13 +25,15 @@
     background-color: rgba(0, 0, 0, 0.2);
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: cover;
+    border-radius: 8px;
 
     color: #000000;
 
     position: absolute;
     z-index: 9999;
 
-    width: 320px;
+    width: calc(25.75vw - 16px);
     height: 240px;
     padding: 0px 0px 18px 12px;
 
@@ -56,7 +58,7 @@
 .slick-slide {
     margin-right: 32px;
 
-    width: 320px !important;
+    width: calc(25.75vw - 16px) !important;
     height: 240px !important;
     border-radius: 8px;
 }
@@ -66,7 +68,7 @@
 
 @media (max-width: 767px) {
     .slide {
-        width: 100vw
+        width: 100vw;
     }
     .slide p {
         font-size: 10px;
@@ -78,10 +80,10 @@
         border-radius: 0px;
     }
     .slick-slide {
-        width: 230px !important;
-        height: 176px !important;
+        width: 100vw !important;
+        height: 186px !important;
 
-        margin-right: 28px;
+        padding: 0px calc(30vw/2);
     }
 
     .information {
