@@ -27,11 +27,20 @@ function Slide() {
         slidesToScroll: 1,
         autoplay: true,
         speed: 3000,
-        autoplaySpeed: 100,
-        cssEase: "linear",
-        pauseOnHover: true,
+        autoplaySpeed: 0,
         adaptiveHeight: true,
-        rlt: true
+        initialSlide: 1,
+        cssEase: 'linear',
+        loop: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    pauseOnHover: false,
+                    
+                }
+            }
+        ]
     };
 
     return (

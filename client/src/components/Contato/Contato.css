@@ -91,6 +91,8 @@
 
 .collaborators {
     width: 50vw;
+
+    overflow: hidden;
 }
 
 .social-media {

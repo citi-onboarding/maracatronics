@@ -42,12 +42,10 @@ function Contato() {
             if (db.status === 200) {
                 console.log('Mensagem enviada!');
 
-                var inputs = document.querySelectorAll(".input-clear")
-                inputs.forEach(
-                    (input) => {
-                        input.value = ''
-                    }
-                )
+                setName('')
+                setEmail('')
+                setSubject('')
+                setMessage('')
             }
         } catch (error) {
             console.log('Erro ao enviar')
@@ -80,6 +78,7 @@ function Contato() {
                             <label htmlFor="name">Nome</label>
 
                             <input
+                            required
                             className="input-clear"
                             type="text"
                             name="name"
@@ -92,6 +91,7 @@ function Contato() {
                             <label htmlFor="email">E-mail</label>
                             
                             <input
+                            required
                             className="input-clear"
                             type="email"
                             name="email"
@@ -104,6 +104,7 @@ function Contato() {
                             <label htmlFor="subject">Assunto</label>
 
                             <input
+                            required
                             className="input-clear"
                             type="text"
                             name="subject"
@@ -116,6 +117,7 @@ function Contato() {
                             <label htmlFor="message">Mensagem</label>
 
                             <textarea
+                            required
                             className="input-clear"
                             name="message"
                             value={message}
