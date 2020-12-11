@@ -1,24 +1,22 @@
 import {
-
   Banner,
-  Footer,
 ///  PostList,
   QuemSomos,
   Robos,
-
+  Contato,
+  Footer
 } from './components';
 import './cssGlobal.css';
 
 function App() {
   return (
-
     <>
-    <Banner />
-    <QuemSomos />
-    <Robos />
-    <Footer />
+      <Banner />
+      <QuemSomos />
+      <Robos />
+      <Contato />
+      <Footer />
     </>
-
   );
 }
 

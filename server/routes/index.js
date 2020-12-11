@@ -8,6 +8,7 @@ const apiProposito = require("../controllers/proposito");
 const apiRobos = require("../controllers/robos")
 const redesSociais = require("../controllers/RedesSociais")
 const apiParceiros = require('../controllers/parceiros');
+const mailController = require('../controllers/mailController')
 
 module.exports = (app) => {
   app.use(cors());
@@ -22,6 +23,7 @@ module.exports = (app) => {
   app.get("/api/redesSociais", redesSociais.getSocialMedias);
   app.get('/api/robos', apiRobos.getRobo);
   app.get('/api/parceiros', apiParceiros.getParceiros);
+  app.post('/api/contato', mailController)
 
   app.get('*', (req, res) => {
 		res.redirect('/');

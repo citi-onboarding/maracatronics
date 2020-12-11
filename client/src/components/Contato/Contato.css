@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.contato {
+    background-image: url("../assets/backgroundSection.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+
+    font-family: 'Roboto';
+    color: white;
+}
+.yellow-line-contato {
+    width: 10px;
+
+    margin-left: 18px;
+
+    background-color: #FFED00;
+}
+.contato h1 {
+    font-size: 3vw;
+
+    margin-bottom: 32px;
+}
+.contato-container {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.contato-content {
+    padding: 60px 0px 50px 5vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+    "form collaborators"
+    "form social-medias";
+    grid-column-gap: 80px;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    grid-area: form;
+}
+.form-contato form {
+    display: flex;
+    flex-direction: column;
+}
+.form-contato label {
+    margin-bottom: 8px;
+}
+.form-contato input {
+    height: 36px;
+}
+.form-contato textarea {
+    height: 160px;
+
+    resize: none;
+
+    padding-top: 8px;
+}
+.button-submit {
+    width: 50%;
+    margin-bottom: 0px !important;
+
+    background: #FFED00;
+    border: 1px solid #010101;
+    border-radius: 8px;
+
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+
+    cursor: pointer;
+}
+.form-contato form input,textarea {
+    margin-bottom: 16px;
+    padding-left: 12px;
+
+    outline: none;
+    border: 1px solid #010101;
+    border-radius: 8px;
+    font-family: 'Roboto';
+
+    box-sizing: border-box;
+}
+
+.collaborators {
+    width: 50vw;
+
+    overflow: hidden;
+}
+
+.social-media {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-row-gap: 30px;
+}
