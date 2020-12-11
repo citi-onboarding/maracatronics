@@ -10,7 +10,6 @@
 }
 
 .content {
-
     width: 87%;
     height: 80%;
     display: flex;
@@ -55,11 +54,12 @@
 
 .carousel {
     width: 84%;
-    margin-top: 15px;
+    margin-top: 30px;
     height: 69%;
 }
 
 .card {
+    margin-top: 30px;
     height: 300px;
     display: flex !important;
     flex-direction: row !important;
@@ -78,7 +78,6 @@
     font-weight: normal;
     font-size: 28px;
     line-height: 33px;
-    margin-top: 40px;
 }
 
 .card p {
@@ -130,7 +129,7 @@
 .prev {
     position: absolute;
     background: url("../assets/chevronLeft.svg");
-    margin-top: 300px;
+    margin-top: 310px;
     width: 14px;
     height: 26px;
     border: none;
@@ -142,7 +141,7 @@
 .next {
     position: absolute;
     background: url("../assets/chevronRight.svg");
-    margin-top: 300px;
+    margin-top: 310px;
     width: 14px;
     height: 26px;
     border: none;
@@ -157,6 +156,17 @@
 
 .slick-next::before {
     display: none;
+}
+
+@media(max-width: 1200px) {
+    .carousel {
+        margin-top: 15px;
+    }
+
+    .card {
+        height: 250px;
+    }
+
 }
 
 
@@ -191,6 +201,10 @@
         grid-area: botaoAC
     }
 
+    .carousel {
+        margin-top: 15px;
+    }
+
     .prev {
         margin-top: 330px;
     }
@@ -220,19 +234,20 @@
     }
 
     .buttonsSection {
-        margin-top: 30px;
+        width: 100%;
+        margin-top: 20px;
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 27px;
-        grid-template-areas: 
-        "botaoAI botaoAC"
-        "botaoCombate botaoCombate";
+        grid-template-areas:
+            "botaoAI botaoAC"
+            "botaoCombate botaoCombate";
     }
 
     .buttonsSection button {
-        margin: auto;
-        width: 100px;
+        font-size: 14px;
+        width: 200px;
         height: 40px;
     }
 
@@ -241,15 +256,19 @@
     }
 
     #botaoAutonomosIndividuais {
+        margin-left: 0px;
         grid-area: botaoAI
     }
 
     #botaoAutonomosColetivos {
+        margin-right: 0px;
         grid-area: botaoAC
     }
 
     .card {
         flex-direction: column-reverse !important;
+        height: 330px;
+        margin-top: 20px;
     }
 
     .cardText {
@@ -287,3 +306,60 @@
     
 }
 
+@media(max-width: 470px) {
+    .buttonsSection button {
+        width: 150px;
+        height: 40px;
+    }
+}
+
+@media(max-width: 360px) {
+    .buttonsSection button {
+        font-size: 12px;
+        width: 130px;
+        height: 40px;
+    }
+
+    .buttonsSection {
+        grid-row-gap: 15px;
+    }
+
+    .card {
+        margin-top: 15px;
+        height: 345px;
+    }
+
+    .buttonsSection {
+        margin-top: 15px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+        margin-top: 15px;
+    }
+    
+}
+
+@media(max-width: 327px) {
+    .buttonsSection button {
+        font-size: 10px;
+        width: 110px;
+        height: 40px;
+    }
+
+    .card p {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 260px) {
+    .buttonsSection button {
+        font-size: auto;
+        width: auto;
+        height: 40px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+}
