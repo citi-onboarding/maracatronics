@@ -2,7 +2,7 @@
     outline: none
 }
 
-.slide {
+.collaborators .slide {
     width: 51.5vw;
 }
 .each-collaborators {
@@ -55,28 +55,28 @@
     width: 60%;
 }
 
-.slick-slide {
+.collaborators .slick-slide {
     margin-right: 32px;
 
     width: calc(25.75vw - 16px) !important;
     height: 240px !important;
     border-radius: 8px;
 }
-.slick-list {
+.collaborators .slick-list {
     border-radius: 8px 0px 0px 8px;
 }
 
 @media (max-width: 767px) {
-    .slide {
+    .collaborators .slide {
         width: 100vw;
     }
-    .slide p {
+    .collaborators .slide p {
         font-size: 10px;
     }
-    .slide img {
+    .collaborators .slide img {
         width: 80px;
     }
-    .slick-list {
+    .collaborators .slick-list {
         border-radius: 0px;
     }
     .slick-slide {
