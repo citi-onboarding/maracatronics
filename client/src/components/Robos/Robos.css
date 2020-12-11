@@ -3,7 +3,7 @@
 .robosSection {
     background-color: #ECECEC;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,10 +11,11 @@
 
 .content {
     width: 87%;
-    height: 80%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 66px;
+    margin-bottom: 66px;
 }
 
 .content h1 {
