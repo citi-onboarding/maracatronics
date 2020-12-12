@@ -8,7 +8,7 @@ function Banner() {
   const [banner, setBanner] = useState([]);
   
   const loadBanner = async () => {
-    const res = await axios.get(`${url.url}api/banner`);
+    const res = await axios.get(`${url.url}/api/banner`);
     setBanner(res.data);
   };
   
