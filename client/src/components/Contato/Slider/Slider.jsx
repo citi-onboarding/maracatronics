@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import axios from 'axios';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import url from '../../apiURL';
+import url from '../../../apiURL';
 
 import './Slider.css';
 
