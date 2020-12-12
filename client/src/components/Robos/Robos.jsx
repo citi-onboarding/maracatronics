@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import React from 'react';
 import Slider from "react-slick";
+import url from '../../apiURL';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -11,7 +12,7 @@ function Robos() {
     const [robos, setRobos] = useState([]);
     var robosType = null
     const loadRobos = async () => {
-        const res = await axios.get('http://localhost:3001/api/robos');
+        const res = await axios.get(`${url.url}/api/robos`);
         robosType = res.data
         setRobos(res.data.dataRoboCombate)
     }
