@@ -1,4 +1,5 @@
 import {
+  Navbar,
   Banner,
 ///  PostList,
   QuemSomos,
@@ -11,6 +12,7 @@ import './cssGlobal.css';
 function App() {
   return (
     <>
+      <Navbar />
       <Banner />
       <QuemSomos />
       <Robos />

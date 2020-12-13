@@ -1,3 +1,4 @@
+export { default as Navbar } from './Navbar';
 export { default as Banner } from './Banner';
 export { default as PostList } from './PostList';
 export { default as QuemSomos } from './QuemSomos';
