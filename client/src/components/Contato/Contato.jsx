@@ -60,7 +60,7 @@ function Contato() {
 
     return (
 
-        <section className="contato">
+        <section className="contato" id="contatoSection">
 
             <div className="yellow-line-contato"></div>
 

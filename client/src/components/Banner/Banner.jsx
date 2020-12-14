@@ -20,7 +20,7 @@ function Banner() {
   return (
     <>
     {imageBanner && (
-      <div id="imagemBanner" style={{backgroundImage: `url(${imageBanner})`}} ></div>
+      <div id="imagemBanner"  style={{backgroundImage: `url(${imageBanner})`}} ></div>
     )}
     </>
   );

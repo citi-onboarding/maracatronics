@@ -31,7 +31,7 @@ function QuemSomos() {
     }, []);
   
     return (
-        <section className='quemSomos'>
+        <section className='quemSomos' id="quemSomosSection">
 
             <div className="yellow-line">
             </div>

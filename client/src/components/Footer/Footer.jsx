@@ -8,9 +8,9 @@ function Footer() {
             <a href="https://citi.org.br/" target="_blank" rel="noreferrer" className="direitos">© 2020 CITi - Todos os direitos reservados</a>
             <div className="textoFooter">
                 <p>Made with</p>
-                <img src={codeIcon}/>
+                <img src={codeIcon} alt="</> representando código"/>
                 <p>and</p>
-                <img src={heartIcon}/> 
+                <img src={heartIcon} alt="Coração representando amor"/> 
                 <p>by CITi</p>
             </div>
         </footer>

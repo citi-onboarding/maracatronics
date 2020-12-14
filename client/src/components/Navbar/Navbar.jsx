@@ -1,39 +1,48 @@
-import { useState, useEffect } from 'react';
 import './Navbar.css';
 import logoMaraca from "../assets/logoMaracaNavbar.svg";
 
 
 function Navbar() {
+
+    const toggleMenu = () => {
+        const menu = document.querySelector('.menuList')
+        menu.classList.toggle('activeMenu')
+    }
+
+    window.addEventListener('scroll', () => {
+        console.log(window.pageYOffset)
+    })
+
     return (
-        <div className="navbar">
-            <img src={logoMaraca} alt="logo do maracatronics" class="logo"></img>
-            <input type="checkbox" name="" id="menuHamburguer"/>
-            <label for="menuHamburguer">
-                <div className="botaoHamburguer">
-                    <span className="hamburguer"></span>
-                </div>
-            </label>
+        <header className="navbar">
+
+            <img src={logoMaraca} alt="logo do maracatronics" className="logoNavBar"></img>
+
+            <div className="botaoHamburguer" onClick={toggleMenu}>
+            </div>
+
             <div className="menuNavbar">
-                <ul>
-                    <li>
-                        <a>Início</a>
-                        <div className="marcadorInicio"></div>
+                <ul className="menuList">
+                    <li id="inicioText">
+                        <a href="#imagemBanner">Início</a>
                     </li>
-                    <li>
-                        <a href="">Sobre o Maracatronics</a>
-                        <div className="marcadorSobreOMaraca"></div>
+                    
+                    <li id="sobreText">
+                        <a href="#quemSomosSection">Sobre o Maracatronics</a>
                     </li>
-                    <li>
-                        <a href="">Nossos robôs</a>
-                        <div className="marcadorNossosRobos"></div>
+
+                    <li id="robosText">
+                        <a href="#robosSectionId">Nossos robôs</a>
+                        
                     </li>
-                    <li>
-                        <a href="">Contato</a>
-                        <div className="marcadorContato"></div>
+
+                    <li id="contatoText">
+                        <a href="#contatoSection">Contato</a>
                     </li>
                 </ul>
             </div>
-        </div>
+
+        </header>
     );
   
   };

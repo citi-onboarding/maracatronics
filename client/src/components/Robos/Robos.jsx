@@ -29,7 +29,7 @@ function Robos() {
         var botaoAutonomosColetivos = document.querySelector('#botaoAutonomosColetivos')
 
         function handleArrows(objeto){
-            if(Object.keys(objeto).length == 1) {
+            if(Object.keys(objeto).length <= 1) {
                 arrowPrev.style.display = 'none'
                 arrowNext.style.display = 'none'
             } else{
@@ -90,10 +90,8 @@ function Robos() {
           ],
       };
 
-    console.log(robos)
-
   return (
-      <section className="robosSection">
+      <section className="robosSection" id="robosSectionId">
           <div className="content">
               <h1>Nossos robôs</h1>
               <div className="buttonsSection">
