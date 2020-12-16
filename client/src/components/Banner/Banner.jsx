@@ -3,11 +3,13 @@ import axios from 'axios';
 
 import './Banner.css';
 
+import url from '../../apiURL';
+
 function Banner() {
   const [banner, setBanner] = useState([]);
   
   const loadBanner = async () => {
-    const res = await axios.get('http://localhost:3001/api/banner');
+    const res = await axios.get(`${url.url}/api/banner`);
     setBanner(res.data);
   };
   

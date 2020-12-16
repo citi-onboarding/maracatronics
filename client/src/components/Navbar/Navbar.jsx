@@ -36,66 +36,6 @@ function Navbar() {
         }
     }
 
-    const marcadorMenu = () => {
-        const botaoInicio = document.querySelector('.botaoInicio');
-        const marcadorInicio = document.querySelector('.marcadorInicio');
-        const botaoQuemSomos = document.querySelector('.botaoQuemSomos');
-        const marcadorQuemSomos = document.querySelector('.marcadorQuemSomos');
-        const botaoRobos = document.querySelector('.botaoRobos');
-        const marcadorRobos = document.querySelector('.marcadorRobos');
-        const botaoContato = document.querySelector('.botaoContato');
-        const marcadorContato = document.querySelector('.marcadorContato');
-
-        const handleBotaoInicioClick = async () => {
-            marcadorInicio.style.backgroundColor = 'black';
-            marcadorQuemSomos.style.backgroundColor = 'transparent';
-            marcadorRobos.style.backgroundColor = 'transparent';
-            marcadorContato.style.backgroundColor = 'transparent';
-        }
-
-        const handleBotaoQuemSomosClick = async () => {
-            marcadorInicio.style.backgroundColor = 'transparent';
-            marcadorQuemSomos.style.backgroundColor = 'black';
-            marcadorRobos.style.backgroundColor = 'transparent';
-            marcadorContato.style.backgroundColor = 'transparent';
-        }
-
-        const handleBotaoRobosClick = async () => {
-            marcadorInicio.style.backgroundColor = 'transparent';
-            marcadorQuemSomos.style.backgroundColor = 'transparent';
-            marcadorRobos.style.backgroundColor = 'black';
-            marcadorContato.style.backgroundColor = 'transparent';
-        }
-
-        const handleBotaoContatoClick = async () => {
-            marcadorInicio.style.backgroundColor = 'transparent';
-            marcadorQuemSomos.style.backgroundColor = 'transparent';
-            marcadorRobos.style.backgroundColor = 'transparent';
-            marcadorContato.style.backgroundColor = 'black';
-        }
-        
-        botaoInicio.addEventListener('click', handleBotaoInicioClick);
-        botaoQuemSomos.addEventListener('click', handleBotaoQuemSomosClick);
-        botaoRobos.addEventListener('click', handleBotaoRobosClick);
-        botaoContato.addEventListener('click', handleBotaoContatoClick);
-    }
-
-    const marcadorInitial = () => {
-        const marcadorInicio = document.querySelector('.marcadorInicio');
-        const marcadorQuemSomos = document.querySelector('.marcadorQuemSomos');
-        const marcadorRobos = document.querySelector('.marcadorRobos');
-        const marcadorContato = document.querySelector('.marcadorContato');
-
-        marcadorInicio.style.backgroundColor = 'black';
-        marcadorQuemSomos.style.backgroundColor = 'transparent';
-        marcadorRobos.style.backgroundColor = 'transparent';
-        marcadorContato.style.backgroundColor = 'transparent';
-    }
-
-    useEffect(() => {
-        marcadorInitial();
-        marcadorMenu();
-    }, []);
 
     return (
         <header className="navbar">
@@ -106,22 +46,22 @@ function Navbar() {
                 <ul className="menuList">
                     <li id="inicioText">
                         <a href="#imagemBanner" onClick={toggleMenu} className="botaoInicio">Início</a>
-                        <div className="marcadorInicio"></div>
+                        
                     </li>
                     
                     <li id="sobreText">
                         <a href="#quemSomosSection" onClick={toggleMenu} className="botaoQuemSomos">Sobre o Maracatronics</a>
-                        <div className="marcadorQuemSomos"></div>
+                        
                     </li>
 
                     <li id="robosText">
                         <a href="#robosSectionId" onClick={toggleMenu} className="botaoRobos">Nossos robôs</a>
-                        <div className="marcadorRobos"></div>
+                        
                     </li>
 
                     <li id="contatoText">
                         <a href="#contatoSection" onClick={toggleMenu} className="botaoContato">Contato</a>
-                        <div className="marcadorContato"></div>
+                        
                     </li>
                 </ul>
             </div>

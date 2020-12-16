@@ -7,11 +7,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Robos.css';
 
+import url from '../../apiURL';
+
 function Robos() {
     const [robos, setRobos] = useState([]);
     var robosType = null
     const loadRobos = async () => {
-        const res = await axios.get('http://localhost:3001/api/robos');
+        const res = await axios.get(`${url.url}/api/robos`);
         robosType = res.data
         setRobos(res.data.dataRoboCombate)
     }

@@ -3,11 +3,13 @@ import axios from 'axios';
 
 import './PostList.css';
 
+import url from '../../apiURL';
+
 function PostList() {
   const [posts, setPosts] = useState([]);
 
   const loadPosts = async () => {
-    const res = await axios.get('http://localhost:3001/api/posts');
+    const res = await axios.get(`${url.url}/api/posts`);
     setPosts(res.data);
   };
 

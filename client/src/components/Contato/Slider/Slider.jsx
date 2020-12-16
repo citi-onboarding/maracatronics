@@ -6,12 +6,14 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import './Slider.css';
 
+import url from '../../../apiURL';
+
 function Slide() {
 
     const [collaborators, setCollaborators] = useState([]);
 
     const loadDados = async () => {
-        const res = await axios.get('http://localhost:3001/api/parceiros')
+        const res = await axios.get(`${url.url}/api/parceiros`)
         setCollaborators(res.data)
     }
     useEffect( () => {

@@ -5,6 +5,8 @@ import PurposeBox from './PurposeBox/PurposeBox.jsx';
 import './QuemSomos.css';
 import './QuemSomosResponsive.css';
 
+import url from '../../apiURL';
+
 import missaoIcon from '../assets/missao.svg';
 import valoresIcon from '../assets/valores.svg';
 import visaoIcon from '../assets/visao.svg';
@@ -15,7 +17,7 @@ function QuemSomos() {
     const [propositos, setPropositos] = useState([]);
 
     const loadQuemSomos = async () => {
-        const res = await axios.get('http://localhost:3001/api/quemSomos');
+        const res = await axios.get(`${url.url}/api/quemSomos`);
         setQuemSomos(res.data);
     }
     useEffect( () => {
@@ -23,7 +25,7 @@ function QuemSomos() {
     }, []);
 
     const loadPropositos = async () => {
-        const res = await axios.get('http://localhost:3001/api/proposito');
+        const res = await axios.get(`${url.url}/api/proposito`);
         setPropositos(res.data);
     }
     useEffect( () => {

@@ -4,6 +4,8 @@ import axios from 'axios';
 import './Contato.css';
 import './ContatoResponsivo.css';
 
+import url from '../../apiURL';
+
 import SocialMediaBox from './SocialMediaBox/SocialMediaBox.jsx';
 import Slide from './Slider/Slider'
 
@@ -17,7 +19,7 @@ function Contato() {
     const [redesSociais, setRedesSociais] = useState([]);
 
     const loadRedesSociais = async () => {
-        const res = await axios.get('http://localhost:3001/api/redesSociais');
+        const res = await axios.get(`${url.url}/api/redesSociais`);
         setRedesSociais(res.data)
     }
     useEffect( () => {
@@ -32,7 +34,7 @@ function Contato() {
     const sendMaile = async () => {
 
         try {
-            const db = await axios.post('http://localhost:3001/api/contato', {
+            const db = await axios.post(`${url.url}/api/contato`, {
                 "name": name,
                 "email": email,
                 "subject": subject,
