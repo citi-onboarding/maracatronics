@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.de0c77bb.chunk.css",
+    "main.js": "/static/js/main.f2b5d780.chunk.js",
+    "main.js.map": "/static/js/main.f2b5d780.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.120840cb.js",
+    "runtime-main.js.map": "/static/js/runtime-main.120840cb.js.map",
+    "static/css/2.3475661d.chunk.css": "/static/css/2.3475661d.chunk.css",
+    "static/js/2.0846c5dc.chunk.js": "/static/js/2.0846c5dc.chunk.js",
+    "static/js/2.0846c5dc.chunk.js.map": "/static/js/2.0846c5dc.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.3475661d.chunk.css.map": "/static/css/2.3475661d.chunk.css.map",
+    "static/css/main.de0c77bb.chunk.css.map": "/static/css/main.de0c77bb.chunk.css.map",
+    "static/js/2.0846c5dc.chunk.js.LICENSE.txt": "/static/js/2.0846c5dc.chunk.js.LICENSE.txt",
+    "static/media/Slider.css": "/static/media/backgroundHover.f46b45d4.svg",
+    "static/media/Contato.css": "/static/media/backgroundSection.8865cd6c.svg",
+    "static/media/Robos.css": "/static/media/chevronRight.48bdc653.svg",
+    "static/media/codeIcon.ec995252.svg": "/static/media/codeIcon.ec995252.svg",
+    "static/media/email.a5c15511.svg": "/static/media/email.a5c15511.svg",
+    "static/media/heartIcon.5fd24908.svg": "/static/media/heartIcon.5fd24908.svg",
+    "static/media/instagram.9ac7ecc2.svg": "/static/media/instagram.9ac7ecc2.svg",
+    "static/media/local.37bf6bd6.svg": "/static/media/local.37bf6bd6.svg",
+    "static/media/logo-maraca.6857cdbd.svg": "/static/media/logo-maraca.6857cdbd.svg",
+    "static/media/logoMaracaNavbar.c511bfe3.svg": "/static/media/logoMaracaNavbar.c511bfe3.svg",
+    "static/media/missao.ae29018d.svg": "/static/media/missao.ae29018d.svg",
+    "static/media/slick-theme.css": "/static/media/slick.c94f7671.ttf",
+    "static/media/valores.048d8b87.svg": "/static/media/valores.048d8b87.svg",
+    "static/media/visao.4d6a6b55.svg": "/static/media/visao.4d6a6b55.svg",
+    "static/media/youtube.2557a7ed.svg": "/static/media/youtube.2557a7ed.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.120840cb.js",
+    "static/css/2.3475661d.chunk.css",
+    "static/js/2.0846c5dc.chunk.js",
+    "static/css/main.de0c77bb.chunk.css",
+    "static/js/main.f2b5d780.chunk.js"
+  ]
+}
